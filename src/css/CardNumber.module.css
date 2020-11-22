@@ -1,0 +1,102 @@
+
+.input_wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+.validIcon{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.card_number{
+    font-size: 40px;
+    width: 90%;
+    padding: 5px;
+    position: absolute;
+    top: 30%;
+}
+.card_number::placeholder{
+    font-size: 35x;
+}
+
+
+h1{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+/* validity */
+.validity{
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+    padding: 5px;
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+
+.paySystem{
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    bottom: 50px;
+}
+
+@media  (max-width: 768px){
+
+    .validIcon{
+        top: 28%;
+        right: 5%;
+    }
+    .card_number{
+        font-size: 34px;
+    }
+    .card_number::placeholder{
+        font-size: 34x;
+    }
+
+  
+}
+@media  (max-width: 576px){
+    .card_number{
+        font-size: 24px;
+    }
+    .validity{
+        bottom: 40px;
+        font-size: 22px;
+        width: 90px;
+    }
+    .paySystem{
+        width: 60px;
+        right: 5%;
+        bottom: 40px;
+    }
+    h1{
+       font-size: 24px;
+    }
+    .validIcon{
+        top: 30%;
+        right: 5%;
+    }
+}
+@media  (max-width: 425px){
+    h1{
+       font-size: 20px;
+    }
+}
+@media  (max-width: 375px){
+    h1{
+        font-size: 20px;
+     }
+    .card_number{
+        font-size: 22px;
+    }
+    .validity{
+        font-size: 20px;
+        width: 80px;
+    }
+}

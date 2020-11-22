@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
 import './App.css';
+import CardValidation from './components/CardValidation';
+import store from './redux/store';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import StolenDataScreen from './components/StolenDataScreen';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Provider store={store}>
+        <Switch>
+          <Route exact path='/' component={CardValidation} />
+          <Route path='/stolen' component={StolenDataScreen} />
+        </Switch>
+      </Provider>
+    </Router>
   );
 }
 

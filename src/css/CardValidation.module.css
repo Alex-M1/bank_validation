@@ -1,0 +1,140 @@
+.wrapper{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 751px;
+    height: 381px;
+}
+
+.card,.secondCard{
+    border: 1px solid gray;
+    width: 535px;
+    height: 343px;
+    border-radius: 14px;
+    background: #e9e9e9;
+}
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+
+}
+
+
+/* second */
+.secondCard{
+    background: #e9e9e9;
+    position: absolute;
+    bottom:0px;
+    right: 0;
+}
+.magnitLine{
+    background: #b4b4b4;
+    height: 60px;
+    margin-top: 40px;
+    width: 100%;
+}
+.svv{
+    position: absolute;
+    right: 40px;
+    bottom: 112px;
+    width: 100px;
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.validateButton{
+    position: absolute;
+    top:400px;
+    width: 200px;
+    height: 60px;
+}
+
+@media  (max-width: 1024px){
+    .wrapper{
+        width: 100%;
+       
+    }
+    .card,.secondCard{
+        width: 60%;
+    }
+    .secondCard{
+        right: 200px;
+    }
+}
+
+@media  (max-width: 768px){
+    .wrapper{
+        height: 350px;
+    }
+    .card,.secondCard{
+        width: 60%;
+        height: 300px;
+    }
+    .secondCard{
+        right: 100px;
+    }
+}
+
+@media  (max-width: 576px){
+    
+    .card,.secondCard{
+        height: 250px;
+    }
+    .svv{
+        right: 30px;
+        bottom: 90px;
+        width: 70px;
+        padding: 5px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
+@media  (max-width: 425px){
+
+    .card,.secondCard{
+        left: 10%;
+        width: 80%;
+        height: 250px;
+    }
+
+    .secondCard{
+        top: 300px;
+    }
+    .validateButton{
+        top:600px;
+    }
+}
+@media  (max-width: 375px){
+
+    .card,.secondCard{
+        left: 5%;
+        width: 90%;
+        height: 220px;
+    }
+
+    .secondCard{
+        top: 250px;
+    }
+    .magnitLine{
+        margin-top: 30px;
+        height: 40px;
+
+    }
+    .svv{
+        bottom: 60px;
+    }
+    .validateButton{
+        top:500px;
+    }
+}
